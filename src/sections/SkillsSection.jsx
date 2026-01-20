@@ -37,7 +37,7 @@ const SkillCard = ({ icon: Icon, title, description }) => (
   </div>
 );
 
-const Skills = () => {
+const SkillsSection = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-24">
       {/* ===== Page Header ===== */}
@@ -196,4 +196,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsSection;

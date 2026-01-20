@@ -1,6 +1,6 @@
 import Hero from "../sections/Hero";
 import AboutSection from "../sections/AboutSection";
-import Skills from "../sections/Skills";
+import Skills from "../sections/SkillsSection";
 import Training from "../sections/Training";
 import ProjectsSection from "../sections/ProjectsSection";
 import EmploymentSection from "../sections/EmploymentSection";
