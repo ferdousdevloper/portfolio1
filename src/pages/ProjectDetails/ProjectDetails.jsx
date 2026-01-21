@@ -63,8 +63,8 @@ const projectData = {
       { name: "MongoDB", icon: <FaDatabase /> },
     ],
 
-    live: "https://global-news-demo.com",
-    github: "https://github.com/yourusername/global-news",
+    live: "https://global-news-gama.netlify.app/",
+    github: "https://github.com/ferdousdevloper/global-news-client",
 
     gallery: [
       "/projects/global-news-1.png",
@@ -116,13 +116,10 @@ const projectData = {
       { name: "MongoDB", icon: <FaDatabase /> },
     ],
 
-    live: "https://gadget-galaxy-demo.com",
-    github: "https://github.com/yourusername/gadget-galaxy",
+    live: "https://gadget-galaxybd.netlify.app/",
+    github: "https://github.com/ferdousdevloper/Gadget-Galaxy-client",
 
-    gallery: [
-      "/projects/gadget-galaxy-1.png",
-      "/projects/gadget-galaxy-2.png",
-    ],
+    gallery: ["/projects/gadget-galaxy-1.png", "/projects/gadget-galaxy-2.png"],
   },
 
   "volunteer-link": {
@@ -168,8 +165,8 @@ const projectData = {
       { name: "MongoDB", icon: <FaDatabase /> },
     ],
 
-    live: "https://volunteer-link-demo.com",
-    github: "https://github.com/yourusername/volunteer-link",
+    live: "https://volunteer-link.netlify.app",
+    github: "https://github.com/ferdousdevloper/Volunteer-Link-client",
 
     gallery: [
       "/projects/volunteer-link-1.png",
@@ -222,8 +219,8 @@ const projectData = {
       { name: "MongoDB", icon: <FaDatabase /> },
     ],
 
-    live: "https://diagno-care-demo.com",
-    github: "https://github.com/yourusername/diagno-care",
+    live: "https://diagnocare-48d76.web.app/",
+    github: "https://github.com/ferdousdevloper/Diagno-Care-client",
 
     gallery: [
       "/projects/diagno-care-1.png",
@@ -250,10 +247,7 @@ const projectData = {
       "Fully responsive layout",
     ],
 
-    challenges: [
-      "Maintaining visual consistency",
-      "Optimizing large images",
-    ],
+    challenges: ["Maintaining visual consistency", "Optimizing large images"],
 
     keyLearnings: [
       "UI/UX design principles",
@@ -268,13 +262,48 @@ const projectData = {
 
     tech: [{ name: "React", icon: <FaReact /> }],
 
-    live: "https://jute-wood-decor-demo.com",
-    github: "https://github.com/yourusername/jute-wood-decor",
+    live: "https://jute-wood-decore.netlify.app/",
+    github: "https://github.com/ferdousdevloper/Jute-Wood-Decor",
 
-    gallery: [
-      "/projects/jute-wood-1.png",
-      "/projects/jute-wood-2.png",
+    gallery: ["/projects/jute-wood-1.png", "/projects/jute-wood-2.png"],
+  },
+  "luxury-rentals": {
+    title: "Luxury Rentals",
+    subtitle: "Premium real estate rental platform",
+    banner: "/src/assets/projects/luxury-home.png",
+
+    description:
+      "Jute Wood Decor showcases handcrafted eco-friendly décor products with a focus on sustainability.",
+
+    detailedDescription:
+      "Luxury Rentals is a premium property rental website showcasing high-end apartments and villas with rich visuals and detailed property information for an upscale user experience.",
+
+    features: [
+      "Luxury property listings",
+      "High-quality image galleries",
+      "Detailed property information pages",
+      "Premium UI & responsive layout",
     ],
+
+    challenges: ["Maintaining visual consistency", "Optimizing large images"],
+
+    keyLearnings: [
+      "UI/UX design principles",
+      "Performance optimization for visuals",
+    ],
+
+    futurePlans: [
+      "E-commerce functionality",
+      "Place inquiry system",
+      "CMS integration",
+    ],
+
+    tech: [{ name: "React", icon: <FaReact /> }],
+
+    live: "https://luxury-rentalsbd.netlify.app",
+    github: "https://github.com/ferdousdevloper/Luxury-Rentals",
+
+    gallery: ["/projects/jute-wood-1.png", "/projects/jute-wood-2.png"],
   },
 };
 
@@ -345,10 +374,18 @@ const ProjectDetails = () => {
 
           {/* LINKS */}
           <div className="mt-16 flex gap-6">
-            <a href={project.live} target="_blank" className="btn border-0 shadow-lg transition hover:shadow-[0_0_30px_#FFA500] hover:bg-[#FFA500]">
+            <a
+              href={project.live}
+              target="_blank"
+              className="btn border-0 shadow-lg transition hover:shadow-[0_0_30px_#FFA500] hover:bg-[#FFA500]"
+            >
               <FaExternalLinkAlt /> Live Preview
             </a>
-            <a href={project.github} target="_blank" className="btn btn-outline">
+            <a
+              href={project.github}
+              target="_blank"
+              className="btn btn-outline"
+            >
               <FaGithub /> GitHub
             </a>
           </div>
