@@ -3,32 +3,38 @@ import FadeIn from "../components/FadeIn";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaCode } from "react-icons/fa";
+import globalNews from "../assets/projects/global-news.png"
+import gadgetGalaxy from "../assets/projects/gadget-galaxy.png"
+import volunteerLink from "../assets/projects/volunteer-link.png"
+import diagnoCare from "../assets/projects/diagno-care.png"
+import juteWoodDecor from "../assets/projects/jute-wood.png"
+import luxuryRentals from "../assets/projects/luxury-home.png"
 
 /* ================= PROJECT DATA ================= */
 const projects = [
   {
     id: "global-news",
-    image: "/src/assets/projects/global-news.png",
+    image: globalNews,
   },
   {
     id: "gadget-galaxy",
-    image: "/src/assets/projects/gadget-galaxy.png",
+    image: gadgetGalaxy,
   },
   {
     id: "volunteer-link",
-    image: "/src/assets/projects/volunteer-link.png",
+    image: volunteerLink,
   },
   {
     id: "diagno-care",
-    image: "/src/assets/projects/diagno-care.png",
+    image: diagnoCare,
   },
   {
     id: "jute-wood-decor",
-    image: "/src/assets/projects/jute-wood.png",
+    image: juteWoodDecor,
   },
   {
     id: "luxury-rentals",
-    image: "/src/assets/projects/luxury-home.png",
+    image: luxuryRentals,
   },
 ];
 

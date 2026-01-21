@@ -10,13 +10,19 @@ import {
 import SectionTitle from "../../components/SectionTitle";
 import FadeIn from "../../components/FadeIn";
 import ProjectBanner from "../../components/ProjectBanner";
+import globalNews from "../../assets/projects/global-news.png"
+import gadgetGalaxy from "../../assets/projects/gadget-galaxy.png"
+import volunteerLink from "../../assets/projects/volunteer-link.png"
+import diagnoCare from "../../assets/projects/diagno-care.png"
+import juteWoodDecor from "../../assets/projects/jute-wood.png"
+import luxuryRentals from "../../assets/projects/luxury-home.png"
 
 /* ================= PROJECT DATA ================= */
 const projectData = {
   "global-news": {
     title: "Global News",
     subtitle: "A modern news aggregation & publishing platform",
-    banner: "/src/assets/projects/global-news.png",
+    banner: globalNews,
 
     description:
       "Global News is a full-stack news aggregation platform designed to deliver verified news content with role-based access control and real-time updates.",
@@ -76,7 +82,7 @@ const projectData = {
   "gadget-galaxy": {
     title: "Gadget Galaxy",
     subtitle: "E-commerce product browsing platform",
-    banner: "/src/assets/projects/gadget-galaxy.png",
+    banner: gadgetGalaxy,
 
     description:
       "Gadget Galaxy is a product browsing and filtering platform focused on seamless user experience and dynamic data handling.",
@@ -125,7 +131,7 @@ const projectData = {
   "volunteer-link": {
     title: "Volunteer Link",
     subtitle: "Community-based volunteer management system",
-    banner: "/src/assets/projects/volunteer-link.png",
+    banner: volunteerLink,
 
     description:
       "Volunteer Link connects volunteers with organizations through a centralized management system.",
@@ -178,7 +184,7 @@ const projectData = {
   "diagno-care": {
     title: "Diagno Care",
     subtitle: "Online diagnostic & appointment platform",
-    banner: "/src/assets/projects/diagno-care.png",
+    banner: diagnoCare,
 
     description:
       "Diagno Care is a healthcare platform for online diagnostic test booking and appointment management.",
@@ -232,7 +238,7 @@ const projectData = {
   "jute-wood-decor": {
     title: "Jute Wood Decor",
     subtitle: "Eco-friendly home décor showcase website",
-    banner: "/src/assets/projects/jute-wood.png",
+    banner: juteWoodDecor,
 
     description:
       "Jute Wood Decor showcases handcrafted eco-friendly décor products with a focus on sustainability.",
@@ -270,7 +276,7 @@ const projectData = {
   "luxury-rentals": {
     title: "Luxury Rentals",
     subtitle: "Premium real estate rental platform",
-    banner: "/src/assets/projects/luxury-home.png",
+    banner: luxuryRentals,
 
     description:
       "Jute Wood Decor showcases handcrafted eco-friendly décor products with a focus on sustainability.",
