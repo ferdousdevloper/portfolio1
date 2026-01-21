@@ -1,33 +1,34 @@
 import SectionTitle from "../components/SectionTitle";
 import FadeIn from "../components/FadeIn";
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaCode } from "react-icons/fa";
 
 /* ================= PROJECT DATA ================= */
-const webProjects = [
+const projects = [
   {
-    title: "Global News – News Aggregator Platform",
-    screenshot: "/src/assets/projects/global-news.png",
-    description:
-      "A role-based news aggregation platform with dashboards, article moderation, and real-time updates.",
+    id: "global-news",
+    image: "/src/assets/projects/global-news.png",
   },
   {
-    title: "Diagno Care – Diagnosis Website",
-    screenshot: "/src/assets/projects/diagno-care.png",
-    description:
-      "Modern diagnosis website application featuring filtering, sorting, pagination, and detailed test views.",
+    id: "gadget-galaxy",
+    image: "/src/assets/projects/gadget-galaxy.png",
   },
   {
-    title: "Gadget Galaxy – E-Commerce Website",
-    screenshot: "/src/assets/projects/gadget-galaxy.png",
-    description:
-      "Modern e-commerce website application featuring filtering, sorting, pagination, and detailed gadget views.",
+    id: "volunteer-link",
+    image: "/src/assets/projects/volunteer-link.png",
   },
   {
-    title: "Volunteer Link – Community Platform",
-    screenshot: "/projects/volunteer-link.png",
-    description:
-      "A volunteer management platform connecting organizations and individuals through a clean interface.",
+    id: "diagno-care",
+    image: "/src/assets/projects/diagno-care.png",
+  },
+  {
+    id: "jute-wood-decor",
+    image: "/src/assets/projects/jute-wood.png",
+  },
+  {
+    id: "luxury-rentals",
+    image: "/src/assets/projects/luxury-home.png",
   },
 ];
 
@@ -40,57 +41,46 @@ const ProjectsSection = () => {
             title="Projects"
             subtitle="Selected web development work with real-world impact"
           />
-
-          {/* ===== Category Label ===== */}
-          <div className="flex justify-center mt-12 mb-20">
+           {/* ===== CATEGORY TAG ===== */}
+          <div className="flex justify-center  mb-24">
             <div className="flex items-center gap-3 bg-fuchsia-600/10 text-fuchsia-400 px-6 py-3 rounded-full border border-fuchsia-500/30">
               <FaCode />
               <span className="font-medium">Web Development Projects</span>
             </div>
           </div>
 
-          {/* ===== Projects ===== */}
-          <div className="space-y-28">
-            {webProjects.map((project, index) => (
+          {/* ===== PROJECT GRID ===== */}
+          <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
               <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
+                key={project.id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="flex flex-col md:flex-row md:gap-10 items-center justify-center"
+                className="hover-3d"
               >
-                {/* ===== IMAGE (MAIN FOCUS) ===== */}
-                <div className="relative flex-1 rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-black">
-                  {/* Browser Bar */}
-                  <div className="absolute top-0 left-0 right-0 h-9 bg-neutral-900 flex items-center gap-2 px-4 z-10">
-                    <span className="w-3 h-3 rounded-full bg-red-500" />
-                    <span className="w-3 h-3 rounded-full bg-yellow-500" />
-                    <span className="w-3 h-3 rounded-full bg-green-500" />
+                <Link to={`/projects/${project.id}`}>
+                  <div className=" relative overflow-hidden rounded-3xl border border-white/10  cursor-pointer hover-3d">
+                    {/* Image */}
+                    <img
+                      src={project.image}
+                      alt="Project Screenshot"
+                      className="w-full"
+                    />
+
+                    
                   </div>
-
-                  <img
-                    src={project.screenshot}
-                    alt={project.title}
-                    className="w-full h-[420px] md:h-[520px] object-cover object-top pt-9"
-                  />
-                </div>
-
-                {/* ===== TEXT (SEPARATE) ===== */}
-                <div className="max-w-3xl mt-10">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-black mb-4">
-                    {project.title}
-                  </h3>
-
-                  <p className="text-black/70 leading-relaxed mb-6">
-                    {project.description}
-                  </p>
-
-                  <button className="inline-flex items-center gap-2 text-sm font-medium text-fuchsia-400 transition">
-                    View Project Details
-                    <FaExternalLinkAlt className="text-xs" />
-                  </button>
-                </div>
+                </Link>
+                   {/* 8 empty divs needed for the 3D effect */}
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
               </motion.div>
             ))}
           </div>

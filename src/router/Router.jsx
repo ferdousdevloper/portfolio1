@@ -13,6 +13,7 @@ import KnitConcern from "../pages/EmploymentDetails/KnitConcern"
 import Bsc from "../pages/EducationDetails/Bsc"
 import Diploma from "../pages/EducationDetails/Diploma"
 import Ssc from "../pages/EducationDetails/Ssc"
+import ProjectDetails from "../pages/ProjectDetails/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/education/ssc",
         element: <Ssc />,
+      },
+      {
+        path: "/projects/:id",
+        element: <ProjectDetails></ProjectDetails>,
       },
     ],
   },
