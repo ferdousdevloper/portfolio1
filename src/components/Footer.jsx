@@ -66,6 +66,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               {[
+                ["BDBRAND Store", "/projects/bdbrand-store"],
                 ["Global News", "/projects/global-news"],
                 ["Gadget Galaxy", "/projects/gadget-galaxy"],
                 ["Volunteer Link", "/projects/volunteer-link"],

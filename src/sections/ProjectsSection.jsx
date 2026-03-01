@@ -9,9 +9,14 @@ import volunteerLink from "../assets/projects/volunteer-link.png"
 import diagnoCare from "../assets/projects/diagno-care.png"
 import juteWoodDecor from "../assets/projects/jute-wood.png"
 import luxuryRentals from "../assets/projects/luxury-home.png"
+import bdbrandStore from "../assets/projects/bdbrandp.jpg"
 
 /* ================= PROJECT DATA ================= */
 const projects = [
+  {
+    id: "bdbrand-store",
+    image: bdbrandStore,
+  },
   {
     id: "global-news",
     image: globalNews,

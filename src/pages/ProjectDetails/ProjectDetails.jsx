@@ -56,17 +56,86 @@ import globalNews5 from "../../assets/projects/global-news5.png"
  import wood5 from "../../assets/projects/wood5.png"
  import wood6 from "../../assets/projects/wood6.png"
 
- import luxury1 from "../../assets/projects/luxury1.png"
- import luxury2 from "../../assets/projects/luxury2.png"
- import luxury3 from "../../assets/projects/luxury3.png"
- import luxury4 from "../../assets/projects/luxury4.png"
- import luxury5 from "../../assets/projects/luxury5.png"
- import luxury6 from "../../assets/projects/luxury6.png"
+import luxury1 from "../../assets/projects/luxury1.png"
+import luxury2 from "../../assets/projects/luxury2.png"
+import luxury3 from "../../assets/projects/luxury3.png"
+import luxury4 from "../../assets/projects/luxury4.png"
+import luxury5 from "../../assets/projects/luxury5.png"
+import luxury6 from "../../assets/projects/luxury6.png"
 
-
+import bdbrandStore from "../../assets/projects/bdbrand1.jpg"
+import bdbrand2 from "../../assets/projects/bdbrand2.jpg"
+import bdbrandp from "../../assets/projects/bdbrandp.jpg"
+import bdbrand3 from "../../assets/projects/bdbrand3.jpg"
+import bdbrand4 from "../../assets/projects/bdbrand4.jpg"
+import bdbrand5 from "../../assets/projects/bdbrand5.jpg"
+import bdbrand6 from "../../assets/projects/bdbrand6.jpg"
+import bdbrand7 from "../../assets/projects/bdbrand7.jpg"
+import bdbrand8 from "../../assets/projects/bdbrand8.jpg"
+import bdbrand9 from "../../assets/projects/bdbrand9.jpg"
+import bdbrand10 from "../../assets/projects/bdbrnad10.jpg"
+import bdbrand11 from "../../assets/projects/bdbrand11.jpg"
 
 /* ================= PROJECT DATA ================= */
 const projectData = {
+  "bdbrand-store": {
+    title: "BDBRAND Store",
+    subtitle: "Full Stack MERN E-Commerce",
+    banner: bdbrandStore,
+
+    description:
+      "A modern, full-stack MERN e-commerce application with pixel-perfect frontend, secure Node/Express backend, and real-time business analytics. Includes JWT authentication, role-based admin panel, Stripe & COD checkout, wishlist & cart management, and a statistics dashboard for store owners.",
+
+    detailedDescription:
+      "BDBRAND Store is a complete full-stack MERN e-commerce application built with a pixel-perfect React frontend and secure Node/Express backend. It features JWT authentication with role-based access (USER & ADMIN), protected routes, and password reset via OTP. The shopping experience includes category and brand filters, advanced search, detailed product pages with image gallery and zoom, add to cart, buy now, and persistent wishlist. Payments are handled through Stripe integration and Cash on Delivery (COD). The admin panel allows full management of users, products, and orders, with a real-time statistics dashboard built using Recharts and Framer Motion—showing revenue, orders, category-wise sales, and order status distribution. The stack includes React 18, Redux Toolkit, Tailwind CSS, Framer Motion, React Toastify, Recharts, Node.js, Express, MongoDB, Mongoose, JWT, bcrypt, Stripe, and Nodemailer for OTP flows.",
+
+    features: [
+      "Secure user registration & login with JWT; role-based access (USER & ADMIN)",
+      "Password reset with OTP sent to email; protected routes & auto-logout on unauthorized access",
+      "Browse by category, brand, product name; advanced search & filters",
+      "Product page with image gallery, zoom, related products; Add to Cart & Buy Now",
+      "Wishlist (add/remove, count badge, persistent per user); full cart management",
+      "Stripe integration for online payments; Cash on Delivery (COD) order flow",
+      "Order history for users; admin can update order status, payment status, delete orders",
+      "Admin dashboard: manage users, products, orders; Store Statistics with real-time insights",
+      "Statistics dashboard: total revenue, orders, products; category-wise stock & sales; revenue bar charts; radar chart for order statuses (Delivered, Pending, Canceled, Shipped, Confirmed)",
+      "Toast notifications, smooth animations (Framer Motion), responsive UI with Tailwind",
+    ],
+
+    challenges: [
+      "Designing scalable JWT auth with cookie + Authorization header and role middleware",
+      "Integrating Stripe and COD flows with order persistence and status tracking",
+      "Building real-time analytics and dashboard with Recharts and clean data aggregation",
+      "Managing cart, wishlist, and product state across protected user vs admin routes",
+    ],
+
+    keyLearnings: [
+      "End-to-end MERN architecture with REST APIs and MongoDB for users, products, carts, orders",
+      "Role-based auth flow and ProtectedRoute patterns for admin vs user panels",
+      "Stripe SDK integration and secure payment handling",
+      "Dashboard design with Recharts and Framer Motion for premium analytics UI",
+      "Controller-based API structure and organized backend routes",
+    ],
+
+    futurePlans: [
+      "Advanced inventory and stock management",
+      "Multi-vendor or marketplace expansion",
+      "Enhanced analytics and reporting",
+      "Mobile app (React Native) or PWA",
+    ],
+
+    tech: [
+      { name: "React", icon: <FaReact /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "MongoDB", icon: <FaDatabase /> },
+    ],
+
+    live: "https://bdbrandstore.thea1wear.com/",
+    github: "#",
+
+    gallery: [bdbrandp, bdbrand3, bdbrand4, bdbrand5, bdbrand6, bdbrand7, bdbrand8, bdbrand9, bdbrand10, bdbrand11, bdbrand2],
+  },
+
   "global-news": {
     title: "Global News",
     subtitle: "A modern news aggregation & publishing platform",
