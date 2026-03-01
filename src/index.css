@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Dark mode via data-theme (for theme toggle) */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light theme - white base with soft blobs */
+[data-theme="light"] body {
+  background: 
+    linear-gradient(135deg, rgba(255, 184, 0, 0.12) 0%, transparent 50%),
+    linear-gradient(225deg, rgba(217, 70, 239, 0.08) 0%, transparent 50%),
+    #ffffff;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Dark theme - dark base with color blend */
+[data-theme="dark"] body {
+  background: 
+    linear-gradient(135deg, rgba(255, 184, 0, 0.08) 0%, transparent 40%),
+    linear-gradient(225deg, rgba(217, 70, 239, 0.08) 0%, transparent 40%),
+    linear-gradient(315deg, rgba(255, 165, 0, 0.06) 0%, transparent 40%),
+    linear-gradient(45deg, rgba(196, 181, 253, 0.04) 0%, transparent 30%),
+    #0f0f12;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Light mode - original neumorphic shadows */
+.shadow-neumorphic {
+  box-shadow: -5px -5px 15px white, 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark mode - soft glow shadows */
+[data-theme="dark"] .shadow-neumorphic {
+  box-shadow: 0 0 40px rgba(255, 165, 0, 0.08), 0 0 80px rgba(217, 70, 239, 0.05);
+}
