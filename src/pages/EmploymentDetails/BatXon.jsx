@@ -53,7 +53,7 @@ const BatXon = () => {
         <div className="max-w-7xl mx-auto px-6 py-28">
           <SectionTitle
             title="Professional Experience"
-            subtitle="Founder & Web Developer – Bat Xon Limited"
+            subtitle="Web Developer – Bat Xon Limited"
           />
 
           {/* Company Overview */}
@@ -96,7 +96,7 @@ const BatXon = () => {
           >
             <div className="grid md:grid-cols-2 gap-6 text-gray-600 dark:text-gray-400">
               <p className="flex items-center gap-3">
-                <FaUserTie /> <strong>Position:</strong> Founder & Web Developer
+                <FaUserTie /> <strong>Position:</strong> Web Developer
               </p>
               <p className="flex items-center gap-3">
                 <FaBriefcase /> <strong>Company:</strong> Bat Xon Limited
@@ -132,7 +132,7 @@ const BatXon = () => {
             </h3>
 
             <ul className="grid md:grid-cols-2 gap-4 list-disc list-inside text-gray-600 dark:text-gray-400 leading-relaxed">
-              <li>Lead and grow Bat Xon Limited as Founder & Web Developer.</li>
+              <li>Lead and grow Bat Xon Limited as a Web Developer.</li>
               <li>Design, develop, and maintain client and in-house web projects.</li>
               <li>Coordinate with digital marketing, graphic design, and software teams.</li>
               <li>Ensure quality delivery of websites and digital solutions.</li>

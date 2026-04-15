@@ -43,7 +43,7 @@ const EmploymentSection = () => {
                   className="rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-white/10 w-full backdrop-blur-xl bg-white/60 dark:bg-gray-900/40 shadow-neumorphic"
                 >
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                    Founder & Web Developer
+                    Web Developer
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 font-medium">
                     Bat Xon Limited (Digital Agency) · www.batxon.com
@@ -53,7 +53,7 @@ const EmploymentSection = () => {
                   </p>
 
                   <ul className="mt-5 list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2">
-                    <li>Lead the agency as Founder & Web Developer.</li>
+                    <li>Lead the agency as a Web Developer.</li>
                     <li>Design and develop client and in-house web projects.</li>
                     <li>Coordinate with digital marketing, design, and software teams.</li>
                     <li>Ensure quality delivery of websites and digital solutions.</li>

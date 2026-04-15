@@ -10,6 +10,25 @@ import {
 import SectionTitle from "../../components/SectionTitle";
 import FadeIn from "../../components/FadeIn";
 import ProjectBanner from "../../components/ProjectBanner";
+import ImageGalleryLightbox from "../../components/ImageGalleryLightbox";
+import superShop from "../../assets/projects/SuperShop-POS1.png";
+import superShop2 from "../../assets/projects/SuperShop-POS2.png";
+import superShop3 from "../../assets/projects/SuperShop-POS3.png";
+import superShop4 from "../../assets/projects/SuperShop-POS4.png";
+import superShop5 from "../../assets/projects/SuperShop-POS5.png";
+import superShop6 from "../../assets/projects/SuperShop-POS6.png";
+import superShop7 from "../../assets/projects/SuperShop-POS7.png";
+import superShop8 from "../../assets/projects/SuperShop-POS8.png";
+import superShop9 from "../../assets/projects/SuperShop-POS9.png";
+import superShop10 from "../../assets/projects/SuperShop-POS10.png";
+import superShop11 from "../../assets/projects/SuperShop-POS11.png";
+import superShop12 from "../../assets/projects/SuperShop-POS12.png";
+import superShop13 from "../../assets/projects/SuperShop-POS13.png";
+import superShop14 from "../../assets/projects/SuperShop-POS14.png";
+import superShop15 from "../../assets/projects/SuperShop-POS15.png";
+import superShop16 from "../../assets/projects/SuperShop-POS16.png";
+import superShopLogin from "../../assets/projects/SuperShop-POSlogin.png";
+
 import globalNews from "../../assets/projects/global-news.png"
 import gadgetGalaxy from "../../assets/projects/gadget-galaxy.png"
 import volunteerLink from "../../assets/projects/volunteer-link.png"
@@ -78,6 +97,106 @@ import bdbrand11 from "../../assets/projects/bdbrand11.jpg"
 
 /* ================= PROJECT DATA ================= */
 const projectData = {
+  "SuperShop-POS": {
+    title: "SuperShop POS",
+    subtitle: "Offline POS & Inventory Management System",
+    banner: superShop,
+
+    description:
+      "A complete offline POS & Inventory Management System for retail businesses in Bangladesh. Features profit/loss tracking, barcode scanning, multi-user support, and full control & maintenance capabilities.",
+
+    detailedDescription:
+      "SuperShop POS is a comprehensive offline Point of Sale and Inventory Management System designed specifically for Bangladeshi retail businesses. Built with React, Redux, and IndexedDB, this software works completely offline while maintaining all data locally. It offers complete control over profit/loss calculation, inventory tracking, sales management, and reporting. The system supports multiple users with role-based access, barcode scanning for quick product entry, and generates professional PDF reports. With a beautiful UI featuring smooth Framer Motion animations, SweetAlert notifications, and responsive design, SuperShop POS delivers a premium experience for store owners. The backend uses Express.js, MongoDB, and Mongoose for data management, with JWT authentication for secure admin access. It also integrates Cloudinary for image storage and supports both online and offline modes.",
+
+    features: [
+      "100% Offline functionality - works without internet using IndexedDB",
+      "Complete inventory management - add, edit, delete products with barcode",
+      "Profit/Loss calculation - real-time profit tracking for each sale",
+      "Multi-user support - create multiple users with different roles (Admin, Cashier, Manager)",
+      "Secure authentication - JWT-based login with password hashing (bcrypt)",
+      "Barcode scanning - fast product entry using barcode scanner",
+      "Sales management - process sales, manage carts, handle returns",
+      "PDF report generation - download sales, inventory, and profit reports",
+      "Category & brand management - organize products efficiently",
+      "Customer management - track customer purchases and history",
+      "Supplier management - manage supplier information and purchases",
+      "Expense tracking - record and track all business expenses",
+      "Dashboard analytics - visual charts showing sales, profit, inventory stats",
+      "Data backup & restore - export/import database as JSON",
+      "Cloud backup option - sync data to cloud when online (MongoDB)",
+      "Dark/Light mode - beautiful UI with theme switching",
+      "Responsive design - works on desktop, tablet, and mobile",
+      "Professional invoices - generate printable invoices with logo",
+    ],
+
+    challenges: [
+      "Building 100% offline-first architecture with IndexedDB",
+      "Implementing real-time profit/loss calculation engine",
+      "Creating secure multi-user authentication system",
+      "Designing beautiful UI with Framer Motion animations",
+      "Optimizing performance for large product databases",
+      "Implementing barcode scanner integration",
+      "Building PDF report generation system",
+      "Managing state across multiple user roles",
+    ],
+
+    keyLearnings: [
+      "Mastering IndexedDB for offline data persistence",
+      "Redux Toolkit for complex state management",
+      "JWT authentication with bcrypt password hashing",
+      "Express.js REST API development with MongoDB/Mongoose",
+      "PDF generation using pdfmake library",
+      "Framer Motion for premium animations",
+      "Role-based access control (RBAC) implementation",
+      "Full-stack offline-first architecture design",
+    ],
+
+    futurePlans: [
+      "Mobile app version (React Native)",
+      "Multi-branch management",
+      "Integration with accounting software",
+      "Advanced analytics and AI predictions",
+      "Barcode label printing",
+      "SMS notification system",
+    ],
+
+    tech: [
+      { name: "React", icon: <FaReact /> },
+      { name: "Vite", icon: <FaReact /> },
+      { name: "Redux", icon: <FaReact /> },
+      { name: "Tailwind", icon: <FaReact /> },
+      { name: "Framer Motion", icon: <FaReact /> },
+      { name: "IndexedDB", icon: <FaDatabase /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express", icon: <FaNodeJs /> },
+      { name: "MongoDB", icon: <FaDatabase /> },
+      { name: "JWT", icon: <FaDatabase /> },
+    ],
+
+    live: "https://pos.batxon.com",
+    github: "#",
+
+gallery: [
+      superShop,
+      superShopLogin,
+      superShop2,
+      superShop3,
+      superShop4,
+      superShop5,
+      superShop6,
+      superShop7,
+      superShop8,
+      superShop9,
+      superShop10,
+      superShop11,
+      superShop12,
+      superShop13,
+      superShop14,
+      superShop15,
+      superShop16,
+    ],
+  },
+
   "bdbrand-store": {
     title: "BDBRAND Store",
     subtitle: "Full Stack MERN E-Commerce",
@@ -506,21 +625,7 @@ const ProjectDetails = () => {
           </div>
 
           {/* GALLERY */}
-          <div className="mt-28">
-            <h3 className="text-2xl font-semibold mb-10 text-white">
-              Project Screenshots
-            </h3>
-            <div className="grid md:grid-cols-2 gap-8 w-full">
-              {project.gallery.map((img, i) => (
-                <motion.img
-                  key={i}
-                  src={img}
-                  className="rounded-3xl shadow-xl"
-                  whileHover={{ scale: 1.05 }}
-                />
-              ))}
-            </div>
-          </div>
+          <ImageGalleryLightbox images={project.gallery} title={project.title} />
         </div>
       </FadeIn>
     </section>
