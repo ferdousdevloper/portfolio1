@@ -106,10 +106,10 @@ const ImageGalleryLightbox = ({ images, title }) => {
   return (
     <>
       <div className="mt-28">
-        <h3 className="text-2xl font-semibold mb-10 text-white flex items-center gap-3">
+        <h3 className="text-2xl font-semibold mb-10 text-gray-900 dark:text-white flex items-center gap-3">
           <FaExpand className="text-fuchsia-600" />
           Project Screenshots
-          <span className="text-sm text-gray-500 font-normal">
+          <span className="text-sm text-gray-500 dark:text-gray-400 font-normal">
             ({images.length} images)
           </span>
         </h3>

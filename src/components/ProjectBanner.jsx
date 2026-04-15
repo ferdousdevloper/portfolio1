@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaLock } from "react-icons/fa";
 
 const ProjectBanner = ({ project }) => {
-  const isPrivate = project.github === "private";
+  const isPrivate = project.github === "#" || project.github === "private";
 
   return (
     <section className="relative overflow-hidden pt-32">
@@ -66,7 +66,7 @@ const ProjectBanner = ({ project }) => {
           >
             <div className="absolute -top-20 -right-20 w-80 h-80 bg-primary/30 blur-3xl rounded-full" />
 
-            <div className="mockup-browser border border-white/10 bg-base-300 shadow-2xl backdrop-blur-xl">
+            <div className="mockup-browser border border-white/10 bg-base-300/80 shadow-2xl backdrop-blur-xl">
               <div className="mockup-browser-toolbar">
                 <div className="input text-xs opacity-70">
                   {project.live?.replace("https://", "") || "pos.batxon.com"}

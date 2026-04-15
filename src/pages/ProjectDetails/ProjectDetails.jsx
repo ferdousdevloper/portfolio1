@@ -548,8 +548,8 @@ const ProjectDetails = () => {
 
   if (!project) {
     return (
-      <section className="py-28 text-center text-white">
-        <h2 className="text-3xl font-bold">Project Not Found</h2>
+      <section className="mt-32 md:mt-0 py-28 text-center">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Project Not Found</h2>
       </section>
     );
   }
@@ -565,7 +565,7 @@ const ProjectDetails = () => {
             subtitle="In-depth details, challenges & future plans"
           />
 
-          <p className="mt-10 text-gray-400 max-w-4xl leading-relaxed">
+          <p className="mt-10 text-gray-600 dark:text-gray-400 max-w-4xl leading-relaxed">
             {project.detailedDescription}
           </p>
 
@@ -579,11 +579,11 @@ const ProjectDetails = () => {
           <SectionBlock title="Key Learnings" items={project.keyLearnings} />
 
           {/* FUTURE */}
-          <div className="mt-20 bg-gray-900/40 p-10 rounded-3xl border border-white/10 shadow backdrop-blur-xl">
-            <h3 className="text-2xl font-semibold mb-6 text-white">
+          <div className="mt-20 bg-white/80 dark:bg-gray-900/40 p-10 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-neumorphic dark:shadow backdrop-blur-xl">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
               Future Development Plans
             </h3>
-            <ul className="grid md:grid-cols-2 gap-4 list-disc list-inside text-gray-400">
+            <ul className="grid md:grid-cols-2 gap-4 list-disc list-inside text-gray-600 dark:text-gray-400">
               {project.futurePlans.map((plan, i) => (
                 <li key={i}>{plan}</li>
               ))}
@@ -592,15 +592,15 @@ const ProjectDetails = () => {
 
           {/* TECH */}
           <div className="mt-20">
-            <h3 className="text-2xl font-semibold mb-6 text-white">Technology Stack</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Technology Stack</h3>
             <div className="flex flex-wrap gap-6">
               {project.tech.map((t, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-3 bg-gray-900/40 px-6 py-4 rounded-2xl shadow border border-white/10"
+                  className="flex items-center gap-3 bg-white/80 dark:bg-gray-900/40 px-6 py-4 rounded-2xl shadow-neumorphic dark:shadow border border-gray-200/50 dark:border-white/10"
                 >
                   <span className="text-2xl text-fuchsia-600">{t.icon}</span>
-                  <span className="font-medium text-white">{t.name}</span>
+                  <span className="font-medium text-gray-900 dark:text-white">{t.name}</span>
                 </div>
               ))}
             </div>
@@ -635,8 +635,8 @@ const ProjectDetails = () => {
 /* ===== SMALL REUSABLE BLOCK ===== */
 const SectionBlock = ({ title, items }) => (
   <div className="mt-20">
-    <h3 className="text-2xl font-semibold mb-6 text-white">{title}</h3>
-    <ul className="list-disc list-inside text-gray-400 space-y-2">
+    <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">{title}</h3>
+    <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2">
       {items.map((item, i) => (
         <li key={i}>{item}</li>
       ))}
